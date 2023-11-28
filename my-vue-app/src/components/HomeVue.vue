@@ -4,7 +4,7 @@
         <p>Dek's Auto</p>
       </div>
       <div id="TitleCitation">
-        <p>L'occasion est entre vos mains</p>
+        <p>L'occasion dans vos mains</p>
       </div>
         <div class="slider-container">
         <div class="menu">
