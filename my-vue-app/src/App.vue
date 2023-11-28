@@ -1,24 +1,45 @@
 <template>
-
-      <div id="app">
-        <nav>
-          <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/more">More</router-link></li>
-          </ul>
-        </nav>
-        <router-view />
-      </div>
-
-</template>
-
-<script>
-
-
-export default {
-  name: 'App'
-};
-
+  <main>
+    <Header msg="Voici le component MyHeader"/>
+      <section id="home">  
+        <HomeVue msg="Voilà le code pour la section Home"/>
+        
+      </section>
+      <section id="offres">
+        <Direct msg="test avec mon back"/>
+        <CallAsyn msg="Deuxième test avec mon back" />
+        <div id="app">
+          <nav>
+            <ul>
+              <li><router-link to="/">Home</router-link></li>
+              <li><router-link to="/more">More</router-link></li>
+            </ul>
+          </nav>
+          <router-view />
+        </div>
+      </section>
+  
+      <section id="contact">
+  
+      </section>
+      </main>
+  
+  </template>
+  
+  <script>
+  import Header from './components/Header.vue'
+  import HomeVue from './components/HomeVue.vue';
+  import Direct from './components/ImportDirect.vue';
+  import CallAsyn from './components/CallAsyn.vue';
+  
+  
+  
+  export default {
+    name: 'App',
+    components: {
+      Header , HomeVue , Direct , CallAsyn
+    }
+  };
 </script>
 
 <style>
