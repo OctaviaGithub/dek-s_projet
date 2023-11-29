@@ -20,7 +20,7 @@
       </section>
   
       <section id="contact">
-  
+         <MyFooter />
       </section>
       </main>
   
@@ -31,13 +31,14 @@
   import HomeVue from './components/HomeVue.vue';
   import Direct from './components/ImportDirect.vue';
   import CallAsyn from './components/CallAsyn.vue';
+  import MyFooter from './components/MyFooter.vue';
   
   
   
   export default {
     name: 'App',
     components: {
-      Header , HomeVue , Direct , CallAsyn
+      Header , HomeVue , Direct , CallAsyn, MyFooter
     }
   };
 </script>
