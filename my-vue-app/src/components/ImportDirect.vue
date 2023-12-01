@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="padding-all">
       <h1>Items from Backend:</h1>
       <ul>
         <li v-for="item in items" :key="item.id">{{ item.name }}</li>
@@ -27,3 +27,8 @@
   }
 </script>
   
+<style scoped>
+#padding-all{
+  padding-top: 50px;
+}
+</style>

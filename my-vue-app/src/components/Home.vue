@@ -3,7 +3,15 @@
 </template>
 
 <script>
+
+
 export default {
-    name: 'HomeVue'
-  }
+    name: 'HomeVue',
+  };
 </script>
+
+<style scoped>
+main{
+  background-color: rgb(195, 211, 222);
+}
+</style>

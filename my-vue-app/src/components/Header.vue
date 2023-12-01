@@ -21,7 +21,6 @@
     </nav>
   </header>
 
-
 </body>
 
 
@@ -31,9 +30,6 @@
 <script>
 export default {
   name: 'MyHeader',
-  props: {
-    msg: String
-  },
   methods: {
     search() {
       console.log("Je suis un bouton");
@@ -89,7 +85,7 @@ $(document).ready(function() {
 
 </script>
 
-<style>
+<style scoped>
 /*-------------Reset-------------*/
 
 button {
@@ -130,21 +126,8 @@ section {
   height: 100vh;
 }
 
-#home {
-  background-color: #ddd;
-}
 
-#offres {
-  background-color: #aaa;
-}
 
-#contact {
-  background-color: #888;
-}
-
-#test {
-  background-color: #666;
-}
 
 /*-------------Helpers-------------*/
 .skew {

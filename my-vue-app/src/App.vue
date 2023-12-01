@@ -8,11 +8,12 @@
       <section id="offres">
         <Direct msg="test avec mon back"/>
         <CallAsyn msg="Deuxième test avec mon back" />
+        
         <div id="app">
           <nav>
             <ul>
               <li><router-link to="/">Home</router-link></li>
-              <li><router-link to="/more">More</router-link></li>
+              <li><router-link to="/more">Show Renault</router-link></li>
             </ul>
           </nav>
           <router-view />
@@ -20,7 +21,7 @@
       </section>
   
       <section id="contact">
-  
+        <MyFooter />
       </section>
       </main>
   
@@ -31,18 +32,23 @@
   import HomeVue from './components/HomeVue.vue';
   import Direct from './components/ImportDirect.vue';
   import CallAsyn from './components/CallAsyn.vue';
+  import MyFooter from './components/MyFooter.vue';
   
   
   
   export default {
     name: 'App',
     components: {
-      Header , HomeVue , Direct , CallAsyn
+      Header , HomeVue , Direct , CallAsyn, MyFooter
     }
   };
 </script>
 
 <style>
+
+main{
+  background-color: rgb(195, 211, 222);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,5 +61,8 @@ nav ul {
   list-style-type: none;
   padding: 0;
 }
+
+
+
 
 </style>
