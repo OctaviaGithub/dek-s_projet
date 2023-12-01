@@ -5,10 +5,10 @@
         <HomeVue msg="Voilà le code pour la section Home"/>
         
       </section>
+
       <section id="offres">
         <Direct msg="test avec mon back"/>
         <CallAsyn msg="Deuxième test avec mon back" />
-        
         <div id="app">
           <nav>
             <ul>

@@ -75,7 +75,7 @@
     
     .footer-dark {
 
-      height : 90vh;
+      height : 100vh;
       padding-bottom: 100px;
 
       padding:50px 0;

@@ -68,4 +68,5 @@ export default {
 .card-description {
     flex-basis: 30%;
     margin: 0;
-}</style>
+}
+</style>

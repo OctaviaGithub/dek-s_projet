@@ -1,7 +1,5 @@
 <template>
 
-
-
 <body>
   <header id="nav-wrapper">
     <nav id="nav">
@@ -12,7 +10,7 @@
       <div class="nav right">
         <label for="input_search"> 
           <input class="nav-link" id="input_search" placeholder="Recherche..." v-model="texteSaisi">
-          <a @click="afficher_donnees()"  id="onclick"><img src="../assets/search.png" id="image_search"></a>
+          <a @click="afficher_donnees()" id="onclick"><img :src="require('@/assets/search.png')" id="image_search"></a>
         </label>
         <a href="#home" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
         <a href="#offres" class="nav-link"><span class="nav-link-span"><span class="u-nav">Offres</span></span></a>
@@ -22,7 +20,6 @@
   </header>
 
 </body>
-
 
 </template>
 
