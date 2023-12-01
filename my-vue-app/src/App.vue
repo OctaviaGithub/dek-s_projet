@@ -21,7 +21,10 @@
       </section>
   
       <section id="contact">
+
         <MyFooter />
+         <MyFooter />
+
       </section>
       </main>
   

@@ -64,16 +64,20 @@
     </script>
     
     <style scoped>
+
     .container{
       padding-top: 100px;
     }
+
     .icon{
       background-color: aquamarine;
     }
     
     .footer-dark {
+
       height : 90vh;
       padding-bottom: 100px;
+
       padding:50px 0;
       color:#f0f9ff;
       background-color:#282d32;
