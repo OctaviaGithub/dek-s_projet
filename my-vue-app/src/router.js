@@ -1,20 +1,20 @@
 // router.js
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from './components/Home.vue';
-import More from './components/About.vue';
+import Peugeot from './components/Peugeot.vue';
+import Renault from './components/Renault.vue';
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/',
-            name: 'Home',
-            component: Home
+            path: '/peugeot',
+            name: 'Peugeot',
+            component: Peugeot
         },
         {
-            path: '/more',
-            name: 'More',
-            component: More
+            path: '/renault',
+            name: 'Renault',
+            component: Renault
         }
     ]
 });
