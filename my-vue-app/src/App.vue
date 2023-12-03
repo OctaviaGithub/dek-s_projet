@@ -5,15 +5,15 @@
         <HomeVue msg="Voilà le code pour la section Home"/>
         
       </section>
+
       <section id="offres">
         <Direct msg="test avec mon back"/>
         <CallAsyn msg="Deuxième test avec mon back" />
-        
         <div id="app">
           <nav>
             <ul>
-              <li><router-link to="/">Home</router-link></li>
-              <li><router-link to="/more">Show Renault</router-link></li>
+              <li><router-link class="button-router" to="/peugeot">Show Peugeot</router-link></li>
+              <li><router-link class="button-routeur" to="/renault">Show Renault</router-link></li>
             </ul>
           </nav>
           <router-view />
@@ -23,7 +23,6 @@
       <section id="contact">
 
         <MyFooter />
-         <MyFooter />
 
       </section>
       </main>

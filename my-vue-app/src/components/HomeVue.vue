@@ -28,7 +28,9 @@
 </template>
 
 <style scoped>
-
+body{
+  background-color: rgb(195, 211, 222);
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,400;1,400&display=swap');
 
