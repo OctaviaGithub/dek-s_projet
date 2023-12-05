@@ -54,12 +54,8 @@
     
     
     <script>
-    
     export default {
       name: 'MyFooter',
-      props: {
-        msg: String
-      }
     }
     </script>
     
