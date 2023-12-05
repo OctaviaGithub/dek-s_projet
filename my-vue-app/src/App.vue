@@ -7,13 +7,12 @@
       </section>
 
       <section id="offres">
-        <Direct msg="test avec mon back"/>
-        <CallAsyn msg="Deuxième test avec mon back" />
         <div id="app">
           <nav>
             <ul>
-              <li><router-link class="button-router" to="/peugeot">Show Peugeot</router-link></li>
-              <li><router-link class="button-routeur" to="/renault">Show Renault</router-link></li>
+              <router-link class="button-router" id="routerlink1" to="/">Back Home</router-link>
+              <router-link class="button-router" id="routerlink2" to="/peugeot">Show Peugeot</router-link>
+              <router-link class="button-router" id="routerlink3" to="/renault">Show Renault</router-link>
             </ul>
           </nav>
           <router-view />
@@ -32,8 +31,6 @@
   <script>
   import Header from './components/Header.vue'
   import HomeVue from './components/HomeVue.vue';
-  import Direct from './components/ImportDirect.vue';
-  import CallAsyn from './components/CallAsyn.vue';
   import MyFooter from './components/MyFooter.vue';
   
   
@@ -41,12 +38,14 @@
   export default {
     name: 'App',
     components: {
-      Header , HomeVue , Direct , CallAsyn, MyFooter
+      Header , HomeVue , MyFooter
     }
   };
 </script>
 
 <style>
+
+
 
 main{
   background-color: rgb(195, 211, 222);
@@ -61,9 +60,19 @@ main{
 }
 nav ul {
   list-style-type: none;
-  padding: 0;
 }
-
+#routerlink1{
+  text-decoration: none;
+  padding:100px;
+}
+#routerlink2{
+  text-decoration: none;
+  padding:100px;
+}
+#routerlink3{
+  text-decoration: none;
+  padding:100px;
+}
 
 
 
