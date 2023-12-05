@@ -10,9 +10,10 @@
         <div id="app">
           <nav>
             <ul>
-              <router-link class="button-router" id="routerlink1" to="/">Back Home</router-link>
-              <router-link class="button-router" id="routerlink2" to="/peugeot">Show Peugeot</router-link>
-              <router-link class="button-router" id="routerlink3" to="/renault">Show Renault</router-link>
+              <router-link class="button-router" id="router1" to="/">Back Home</router-link>
+              <router-link class="button-router" to="/peugeot">Show Peugeot</router-link>
+              <router-link class="button-router" id="router2" to="/renault">Show Renault</router-link>
+              <router-link class="button-router" id="router2" to="/cart">Show Cart</router-link>
             </ul>
           </nav>
           <router-view />
@@ -34,7 +35,6 @@
   import MyFooter from './components/MyFooter.vue';
   
   
-  
   export default {
     name: 'App',
     components: {
@@ -45,8 +45,16 @@
 
 <style>
 
-
-
+#router1{
+  padding-right:100px;
+}
+#router2{
+  padding-left:100px;
+}
+.button-router{
+  text-decoration:none;
+  align-items: center;
+}
 main{
   background-color: rgb(195, 211, 222);
 }
@@ -60,18 +68,6 @@ main{
 }
 nav ul {
   list-style-type: none;
-}
-#routerlink1{
-  text-decoration: none;
-  padding:100px;
-}
-#routerlink2{
-  text-decoration: none;
-  padding:100px;
-}
-#routerlink3{
-  text-decoration: none;
-  padding:100px;
 }
 
 

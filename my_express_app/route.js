@@ -1,7 +1,6 @@
 const express = require('express');
 
 
-
 const setupRoutes = (app, db) => {
     app.get('/renaults', (req, res) => {
         db.all('SELECT * FROM renault', [], (err, rows) => {

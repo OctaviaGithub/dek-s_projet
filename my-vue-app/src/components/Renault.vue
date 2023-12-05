@@ -4,6 +4,8 @@
             <h3 class="card-description">{{ renault.name }}</h3>
             <img class="card-image" :src="renault.url_img" alt="Card image">
             <h3 class="card-description">{{ renault.description }}</h3>
+            <h3 class="card-description">{{ renault.price }}€</h3>
+            <button>Add to cart</button>
             <center><hr ></center>
         </div>
 </template>
