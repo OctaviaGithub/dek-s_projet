@@ -5,15 +5,9 @@ import Renault from './components/Renault.vue';
 import Nothing from './components/Nothing.vue';
 import BasketVue from './components/BasketVue.vue';
 
-import LoginForm from './components/LoginForm.vue';
-
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        /*{
-                    path: '/',
-                    redirect: '/LoginForm', // Redirige de la page d'accueil vers la page de connexion
-                },*/
         {
             path: '/peugeot',
             name: 'Peugeot',
@@ -25,21 +19,18 @@ const router = createRouter({
             component: Renault
         },
         {
-            path: '/LoginForm',
-            name: 'LoginForm',
-            component: LoginForm
-        },
-        {
             path: '/',
-            name: 'Nothing',
-            component: Nothing
+            name:'Nothing',
+            component:Nothing
         },
         {
-            path: '/cart',
-            name: 'Cart',
-            component: BasketVue
+            path:'/cart',
+            name:'Cart',
+            component:BasketVue
         }
     ]
 });
 
 export default router;
+
+
