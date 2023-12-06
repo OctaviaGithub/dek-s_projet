@@ -7,17 +7,15 @@
       </section>
 
       <section id="offres">
-        <div id="app">
-          <nav>
-            <ul>
-              <router-link class="button-router" id="router1" to="/">Back Home</router-link>
-              <router-link class="button-router" to="/peugeot">Show Peugeot</router-link>
-              <router-link class="button-router" id="router2" to="/renault">Show Renault</router-link>
-              <router-link class="button-router" id="router2" to="/cart">Show Cart</router-link>
-            </ul>
-          </nav>
-          <router-view />
+        <div class="navbar">
+          <select v-model="selectedRoute" @change="navigate">
+            <option value="/">Accueil</option>
+            <option value="/peugeot">Peugeot</option>
+            <option value="/renault">Renault</option>
+            <option value="/cart">Panier</option>
+          </select>
         </div>
+        <router-view />
       </section>
   
       <section id="contact">
@@ -39,22 +37,60 @@
     name: 'App',
     components: {
       Header , HomeVue , MyFooter
+    }, data() {
+    return {
+      selectedRoute: '/'
+    };
+    }, 
+    methods: {
+    navigate() {
+      this.$router.push(this.selectedRoute);
     }
-  };
+  }
+  }
+
 </script>
+
+<style scoped>
+
+.navbar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: block;
+  background-color: #ecf0f1;
+  color: #3498db;
+}
+
+select:hover {
+  border-color: #2980b9;
+}
+
+select:hover {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+</style>
 
 <style>
 
-#router1{
-  padding-right:100px;
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
-#router2{
-  padding-left:100px;
-}
-.button-router{
-  text-decoration:none;
-  align-items: center;
-}
+
+
 main{
   background-color: rgb(195, 211, 222);
 }
