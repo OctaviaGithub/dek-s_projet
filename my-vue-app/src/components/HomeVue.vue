@@ -6,6 +6,28 @@
       <div id="TitleCitation">
         <p>L'occasion entre vos mains</p>
       </div>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.caradisiac.com/images/5/3/3/8/185338/S0-audi-a1-d-occasion-faut-il-craquer-pour-un-premier-prix-649522.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.ctfassets.net/uaddx06iwzdz/1sfLB4IrdwYgUAZBoT3phQ/5cde5764f2813e686f5fc54980099161/bmw-x4-l-02.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://photos.auto-moto.com/32/2023/05/photo_article/16558/118331/1200-L-voiture-franaise-d-occasion-moins-de-15-000-focus-sur-la-peugeot-308.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      <!--
         <div class="slider-container">
         <div class="menu">
             <label for="slide-dot-1"></label>
@@ -22,8 +44,9 @@
         <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
         <img class="slide-img" src="https://photos.auto-moto.com/32/2023/05/photo_article/16558/118331/1200-L-voiture-franaise-d-occasion-moins-de-15-000-focus-sur-la-peugeot-308.webp">
 
-        </div>
+        </div> -->
     </body>
+  
 
 </template>
 
