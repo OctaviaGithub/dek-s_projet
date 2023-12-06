@@ -9,7 +9,7 @@ const initializeDatabase = () => {
         db.run('DROP TABLE IF EXISTS renault');
         db.run('DROP TABLE IF EXISTS peugeot');
         db.run('DROP TABLE IF EXISTS cart');
-        gitdsqfqsdfq;
+        
         db.run('CREATE TABLE IF NOT EXISTS renault (id INTEGER PRIMARY KEY, name TEXT, description TEXT , url_img TEXT, price INTEGER)');
         db.run('CREATE TABLE IF NOT EXISTS peugeot (id INTEGER PRIMARY KEY, name TEXT, description TEXT , url_img TEXT, price INTEGER)');
         db.run('CREATE TABLE IF NOT EXISTS cart (id INTEGER PRIMARY KEY, name TEXT, price INTEGER)');
