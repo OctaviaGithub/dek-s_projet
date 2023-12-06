@@ -26,6 +26,13 @@ const initializeDatabase = () => {
         decl.run('Peugeot 206', 'Meilleure voiture pour les débutants sortant du permis !', 'https://images.caradisiac.com/images/2/0/6/7/172067/S0-la-peugeot-206-en-occasion-les-meilleures-et-les-pires-versions-572179.jpg', '2499');
 
         const dec = db.prepare('INSERT OR IGNORE INTO cart (name, price) VALUES (?,?)');
+
+        db.run('DROP TABLE IF EXISTS utilisateur');
+        db.run('CREATE TABLE IF NOT EXISTS utilisateur (id INTEGER PRIMARY KEY, email TEXT UNIQUE, password TEXT)');
+        const ut = db.prepare('INSERT OR IGNORE INTO utilisateur (email, password) VALUES (?, ?)');
+        ut.run('utilisateur1', 'motdepasse1'); // Remplacez ces valeurs par celles de votre choix
+        ut.run('utilisateur2', 'motdepasse2'); // Remplacez ces valeurs par celles de votre choix
+        ut.finalize();
         dec.run('Peugeot 406', '1599');
     });
 

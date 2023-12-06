@@ -13,6 +13,8 @@
             <option value="/peugeot">Peugeot</option>
             <option value="/renault">Renault</option>
             <option value="/cart">Panier</option>
+            <option value="/login">Login</option>
+            <option value="/inscription">Inscription</option>
           </select>
         </div>
         <router-view />

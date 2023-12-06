@@ -4,6 +4,8 @@ import Peugeot from './components/Peugeot.vue';
 import Renault from './components/Renault.vue';
 import Nothing from './components/Nothing.vue';
 import BasketVue from './components/BasketVue.vue';
+import InscriptioForm from './components/InscriptionForm.vue';
+import LoginForm from './components/LoginForm.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -27,6 +29,16 @@ const router = createRouter({
             path:'/cart',
             name:'Cart',
             component:BasketVue
+        },
+        {
+            path:'/inscription',
+            name:'Inscription',
+            component:InscriptioForm
+        },
+        {
+            path:'/login',
+            name:'Login',
+            component:LoginForm
         }
     ]
 });
