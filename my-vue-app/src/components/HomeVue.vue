@@ -4,7 +4,7 @@
         <p>Dek's Auto</p>
       </div>
       <div id="TitleCitation">
-        <p>L'occasion dans vos mains</p>
+        <p>L'occasion entre vos mains</p>
       </div>
         <div class="slider-container">
         <div class="menu">
@@ -29,7 +29,7 @@
 
 <style scoped>
 body{
-  background-color: rgb(195, 211, 222);
+  background : linear-gradient(270deg, #0B0B95 0%, rgba(235, 235, 255, 0.98) 45.42%, rgba(255, 255, 255, 0.98) 50.9%, rgba(229, 229, 255, 0.98) 55.83%, rgba(11, 11, 149, 0.98) 100%);
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,400;1,400&display=swap');
@@ -82,7 +82,7 @@ img {
   margin: 0 0.2em 1em;
 }
 .menu label:hover,.menu label:focus {
-  background: #1c87c9;
+  background: #000000;
 }
 .slide-input{
   opacity: 0;
