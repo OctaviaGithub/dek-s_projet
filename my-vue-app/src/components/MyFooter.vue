@@ -4,26 +4,37 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-md-3">
-                <h3>Services</h3>
+                <h2>Services</h2>
                 <ul>
-                  <li><a href="#">Web design</a></li>
-                  <li><a href="#">Development</a></li>
-                  <li><a href="#">Hosting</a></li>
+                  <li><a href="#">Ventes</a></li>
+                  <li><a href="#">Entretien</a></li>
+                  <li><a href="#">Assurance</a></li>
                 </ul>
               </div>
               <div class="col-sm-6 col-md-3">
-                <h3>About</h3>
+                <h2>About</h2>
                 <ul>
                   <li><a href="#">Company</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Careers</a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"> </a></li>
                 </ul>
               </div>
-              <div class="col-md-6">
-                <h3>Company Name</h3>
+              <div class="col-md-3">
+                <h2>Company Name</h2>
                 <p>
                   DEK'S AUTO
                 </p>
+              </div>
+              <div class="col-md-3">
+                <h2>Contact</h2>
+                  <p>N'hésitez pas à nous contacter !</p>
+                  <p>Appelez-nous gratuitement dès maintenant</p>
+                  <p>+33 7 53 64 30 34</p>
+                  <p>(Prix d'un appel local)</p>
+                  <p>Du lundi au samedi : 8h à 20h. Sauf dimanche et jours fériés</p>
+                  <p>Ou envoyez-nous un mail à</p>
+                  <p><a href="mailto:ndanychaste@gmail.com">ndanychaste@gmail.com</a></p>
               </div>
               <div>
                   <!--<div class="col item social">
@@ -44,7 +55,7 @@
               </div>
             </div>
           </div>
-          <p class="text-center">Company Name © 2018</p>
+          <p class="text-center">DEK'S AUTO © 2018</p>
         </footer>
       </div>
     
@@ -60,7 +71,7 @@
     </script>
     
     <style scoped>
-
+    
     .container{
       padding-top: 100px;
     }
