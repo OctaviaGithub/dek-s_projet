@@ -17,6 +17,7 @@ app.use(cors({
 const db = initializeDatabase();
 setupRoutes(app, db);
 
+console.log(db.run('SELECT * FROM cart'));
 app.listen(PORT, () => {
   console.log(`Le serveur tourne très bien sur le port N°${PORT}`);
 });
