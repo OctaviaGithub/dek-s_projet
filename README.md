@@ -13,14 +13,14 @@
 
 ##### Points à respecter : 
 
-### [] Visuellement :
-###         - [x] Avoir un header et footer sur chaque page
+ [] Visuellement :
+         - [x] Avoir un header et footer sur chaque page
 
-### [] Faire comme action :
-###         - [x] Afficher des articles créés dynamiquement à partir de data dans une DB.
-###         - [ ] Permettre de posté un formulaire du front jusqu’à la DB.
-###         - [x] Ajouter un article dans un panier (le panier sera global à tous les utilisateurs).
-###         - [x] Enlever des articles d’un panier. 
+ [] Faire comme action :
+         - [x] Afficher des articles créés dynamiquement à partir de data dans une DB.
+         - [ ] Permettre de posté un formulaire du front jusqu’à la DB.
+         - [x] Ajouter un article dans un panier (le panier sera global à tous les utilisateurs).
+         - [x] Enlever des articles d’un panier. 
 
 
 
