@@ -33,7 +33,6 @@
   import Header from './components/Header.vue'
   import HomeVue from './components/HomeVue.vue';
   import MyFooter from './components/MyFooter.vue';
-
   
   
   export default {
@@ -55,29 +54,17 @@
 .button-router{
   text-decoration:none;
   align-items: center;
-  color: black;
 }
 main{
-  background : linear-gradient(270deg, #0B0B95 0%, rgba(235, 235, 255, 0.98) 45.42%, rgba(255, 255, 255, 0.98) 50.9%, rgba(229, 229, 255, 0.98) 55.83%, rgba(11, 11, 149, 0.98) 100%);
-
-
-
-
-
-
-
-
+  background-color: rgb(195, 211, 222);
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #000000;
+  color: #2c3e50;
   margin-top: 60px;
-  line-height: 4;
 }
 nav ul {
   list-style-type: none;
