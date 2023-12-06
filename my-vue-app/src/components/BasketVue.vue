@@ -1,5 +1,7 @@
 <template>
-    <p>Voici votre nombre d'article : {{ baskets.nbr_article }}</p>
+  <div v-for="cart in carts" :key="cart.id">
+    <p>Voici vos articles que vous avez ajouté : {{ cart.name }} avec un prix de {{ cart.price }}</p>
+  </div>
     <button id="button1">Ajouter un article au panier</button>
     <div class="spacer">
         
@@ -9,26 +11,23 @@
 
 
 <script>
+
     export default {
       name: 'MyBasket',
-      data(){
-        return {
-            baskets: { nbr_article: 0 },
-        };
-      },
-      /*mounted(){
-        fetch('http://localhost:3000/peugeot')
+      data() {
+      return {
+        carts:[]
+      };
+    },
+    mounted() {
+      fetch('http://localhost:3000/cart')
         .then(response => response.json())
         .then(data => {
-          this.baskets = data;
+          this.carts = data;
         })
-      },
-      methods:{
-        submit_button(){
-            console.log("Submit Test");
-        }
-      }*/
-} 
+    }
+  }
+ 
     </script>
 
 <style scoped>
